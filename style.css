@@ -1,0 +1,448 @@
+/* ==========================
+   Adam Script Hub
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Segoe UI,Arial,sans-serif;
+    background:#0d1117;
+    color:#f1f5f9;
+    overflow-x:hidden;
+}
+
+/* Background */
+
+.background{
+    position:fixed;
+    inset:0;
+    background:
+        radial-gradient(circle at top,#1b2332 0%,transparent 45%),
+        #0d1117;
+    z-index:-2;
+}
+
+/* Navbar */
+
+.navbar{
+    width:100%;
+    height:75px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 8%;
+
+    position:sticky;
+    top:0;
+
+    backdrop-filter:blur(15px);
+
+    background:rgba(13,17,23,.85);
+
+    border-bottom:1px solid #202938;
+
+    z-index:1000;
+}
+
+.logo{
+
+    font-size:24px;
+    font-weight:700;
+
+    color:#ffffff;
+
+    letter-spacing:.5px;
+
+}
+
+.contact-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:11px 20px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-size:15px;
+
+}
+
+.contact-btn:hover{
+
+    background:#3b82f6;
+
+    transform:translateY(-2px);
+
+}
+
+/* Hero */
+
+.hero{
+
+    text-align:center;
+
+    padding:90px 20px 50px;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    color:#9ca3af;
+
+}
+
+.hero-small{
+
+    display:block;
+
+    margin-top:18px;
+
+    color:#6b7280;
+
+    font-size:15px;
+
+}
+
+/* Main */
+
+.container{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+
+}
+
+.section-title{
+
+    margin:30px 0;
+
+    font-size:28px;
+
+}
+
+/* Cards */
+
+.scripts-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+    gap:25px;
+
+    padding-bottom:60px;
+
+}
+
+.script-card{
+
+    background:#161b22;
+
+    border:1px solid #2b3442;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    transition:.25s;
+
+}
+
+.script-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#2563eb;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.card-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.card-title{
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.badge{
+
+    background:#2563eb;
+
+    padding:5px 12px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+}
+
+.card-desc{
+
+    color:#9ca3af;
+
+    line-height:1.6;
+
+    margin-bottom:18px;
+
+}
+
+.meta{
+
+    color:#7c8798;
+
+    font-size:14px;
+
+    margin-bottom:18px;
+
+}
+
+.code-box{
+
+    background:#0d1117;
+
+    border-radius:14px;
+
+    padding:16px;
+
+}
+
+.code-text{
+
+    display:block;
+
+    color:#58a6ff;
+
+    margin-bottom:15px;
+
+    word-break:break-all;
+
+}
+
+.copy-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-size:15px;
+
+}
+
+.copy-btn:hover{
+
+    background:#3b82f6;
+
+}
+
+/* Footer */
+
+footer{
+
+    border-top:1px solid #202938;
+
+    text-align:center;
+
+    padding:35px 20px;
+
+    color:#7d8590;
+
+}
+
+/* Popup */
+
+.overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+}
+
+.overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.popup{
+
+    position:fixed;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-40%) scale(.9);
+
+    width:420px;
+
+    max-width:92%;
+
+    background:#161b22;
+
+    border:1px solid #2b3442;
+
+    border-radius:22px;
+
+    padding:30px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+}
+
+.popup.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translate(-50%,-50%) scale(1);
+
+}
+
+.close-popup{
+
+    position:absolute;
+
+    right:18px;
+
+    top:18px;
+
+    width:35px;
+
+    height:35px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#222b38;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.email-box{
+
+    margin-top:25px;
+
+    background:#0d1117;
+
+    border:1px solid #2b3442;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+    color:#58a6ff;
+
+}
+
+/* Mobile */
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.logo{
+
+font-size:20px;
+
+}
+
+.navbar{
+
+padding:0 20px;
+
+}
+
+}
