@@ -74,7 +74,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/BlitzIsKing/Universal
     updated: "30 Jul 2026",
 
     description:
-        "Write anything here.",
+        "The Best Script For Farming",
 
     script: `loadstring(game:HttpGet("https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/FischMain"))()`
     },
