@@ -5,7 +5,7 @@
 
 const scripts = [
     {
-        game: "🍍 Blox Fruits",
+        game: "🍍 Blox Fruits test",
         description: "A clean example card for a new Roblox game update. Replace this text with your own script details.",
         updated: "30 Jul 2026",
         badge: "NEW",
