@@ -10,15 +10,15 @@ const scripts = [
     // ==========================================
 
     {
-        game: "🍍 Blox Fruits",
+        game: "INFINITE YEILD SCRIPT",
 
-        description: "Auto Farm, Auto Chest, Auto Boss.",
+        description: "Infinite Yield  Script allows users to gain more controls and extra exciting features to ramp up their Roblox Gameplay. It is totally free to use and very easy to install and apply to your Roblox  games",
 
         updated: "30 Jul 2026",
 
         badge: "NEW",
 
-        script: `loadstring(game:HttpGet("YOUR_LINK"))()`
+        script: `loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()`
     },
 
 
@@ -64,7 +64,7 @@ const scripts = [
     // ==========================================
 
     {
-    game: "FUCK YOU BITCH",
+    game: "",
 
     badge: "NEW",
 
