@@ -1,23 +1,22 @@
-/* ==========================================
-   Adam Script Hub
-   Edit this file to add or remove scripts.
-   ========================================== */
+/* ==========================================================
+    Adam Script Hub
+    Edit this file to add, edit or remove Roblox scripts.
+========================================================== */
 
 const scripts = [
 
-    // ======================================
-    // Script 1
-    // ======================================
+    // ======================================================
+    // BLOX FRUITS
+    // ======================================================
 
     {
-        game: "🍍 Moury IS THE BEST",
+        game: "🍍 Blox Fruits",
 
-        badge: "NEW",
+        description: "Auto Farm, Auto Chest, Auto Boss.",
 
         updated: "30 Jul 2026",
 
-        description:
-            "The newest Blox Fruits developer script.",
+        badge: "NEW",
 
         script: `-- Blox Fruits Script
 
@@ -26,19 +25,18 @@ loadstring(game:HttpGet("YOUR_LINK_HERE"))()`
 
 
 
-    // ======================================
-    // Script 2
-    // ======================================
+    // ======================================================
+    // JAILBREAK
+    // ======================================================
 
     {
         game: "🚔 Jailbreak",
 
+        description: "Auto Farm, Auto Rob.",
+
+        updated: "29 Jul 2026",
+
         badge: "UPDATED",
-
-        updated: "30 Jul 2026",
-
-        description:
-            "Latest Jailbreak developer script.",
 
         script: `-- Jailbreak Script
 
@@ -47,23 +45,22 @@ print("Hello Jailbreak")`
 
 
 
-    // ======================================
-    // Script 3
-    // ======================================
+    // ======================================================
+    // GROW A GARDEN
+    // ======================================================
 
     {
         game: "🌱 Grow a Garden",
 
+        description: "Auto Farm and Auto Collect.",
+
+        updated: "28 Jul 2026",
+
         badge: "HOT",
 
-        updated: "30 Jul 2026",
+        script: `-- Grow A Garden Script
 
-        description:
-            "Grow a Garden helper script.",
-
-        script: `-- Grow a Garden Script
-
-print("Garden")`
+print("Hello Garden")`
     }
 
 ];
