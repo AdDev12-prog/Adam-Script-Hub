@@ -1,13 +1,13 @@
-/* ==========================================================
+/* ==========================================
     Adam Script Hub
-    Edit this file to add, edit or remove Roblox scripts.
-========================================================== */
+    Edit your scripts below.
+========================================== */
 
 const scripts = [
 
-    // ======================================================
-    // BLOX FRUITS
-    // ======================================================
+    // ==========================================
+    // Script 1
+    // ==========================================
 
     {
         game: "🍍 Blox Fruits",
@@ -18,16 +18,14 @@ const scripts = [
 
         badge: "NEW",
 
-        script: `-- Blox Fruits Script
-
-loadstring(game:HttpGet("YOUR_LINK_HERE"))()`
+        script: `loadstring(game:HttpGet("YOUR_LINK"))()`
     },
 
 
 
-    // ======================================================
-    // JAILBREAK
-    // ======================================================
+    // ==========================================
+    // Script 2
+    // ==========================================
 
     {
         game: "🚔 Jailbreak",
@@ -38,16 +36,14 @@ loadstring(game:HttpGet("YOUR_LINK_HERE"))()`
 
         badge: "UPDATED",
 
-        script: `-- Jailbreak Script
-
-print("Hello Jailbreak")`
+        script: `loadstring(game:HttpGet("YOUR_LINK"))()`
     },
 
 
 
-    // ======================================================
-    // GROW A GARDEN
-    // ======================================================
+    // ==========================================
+    // Script 3
+    // ==========================================
 
     {
         game: "🌱 Grow a Garden",
@@ -58,9 +54,25 @@ print("Hello Jailbreak")`
 
         badge: "HOT",
 
-        script: `-- Grow A Garden Script
+        script: `loadstring(game:HttpGet("YOUR_LINK"))()`
+    },
 
-print("Hello Garden")`
-    }
 
+
+    // ==========================================
+    // Script 3
+    // ==========================================
+
+    {
+    game: "FUCK YOU BITCH",
+
+    badge: "NEW",
+
+    updated: "30 Jul 2026",
+
+    description:
+        "Write anything here.",
+
+    script: `-- Paste your Lua script here`
+    },
 ];
