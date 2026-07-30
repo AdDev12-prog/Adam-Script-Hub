@@ -10,7 +10,7 @@ const scripts = [
     // ======================================
 
     {
-        game: "🍍 Blox Fruits",
+        game: "🍍 Moury IS THE BEST",
 
         badge: "NEW",
 
